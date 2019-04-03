@@ -2,70 +2,50 @@
     "$schema": "http://schema.management.azure.com/schemas/2014-04-01-preview/deploymentTemplate.json#",
     "contentVersion": "1.0.0.1",
     "parameters": {
-        "administratorLogin": {
-            "type": "string"
-        },
-        "administratorLoginPassword": {
-            "type": "securestring"
+        "managedInstanceName": {
+            "value": "sqlmi-datapoc-lab"
         },
         "location": {
-            "type": "string"
+            "value": "westus"
         },
-        "managedInstanceName": {
-            "type": "string"
+        "administratorLogin": {
+            "value": "sqladmin"
+        },
+        "administratorLoginPassword": {
+            "value": null
         },
         "virtualNetworkResourceGroupName": {
-            "type": "string"
+            "value": "RSG-NetworkInfrastructureSpoke-Test"
         },
         "virtualNetworkName": {
-            "type": "string"
+            "value": "VNET-10.13.0.0-NetworkSpoke"
         },
         "subnetName": {
-            "type": "string"
+            "value": "SQL_Managed_Instance"
         },
         "skuName": {
-            "defaultValue": "GP_Gen4",
-            "type": "string"
+            "value": "GP_Gen5"
         },
         "skuEdition": {
-            "defaultValue": "GeneralPurpose",
-            "type": "string"
+            "value": "GeneralPurpose"
         },
         "storageSizeInGB": {
-            "defaultValue": "32",
-            "type": "int"
+            "value": 32
         },
         "vCores": {
-            "defaultValue": "16",
-            "type": "int"
+            "value": 8
         },
         "licenseType": {
-            "defaultValue": "LicenseIncluded",
-            "type": "string"
+            "value": "LicenseIncluded"
         },
         "hardwareFamily": {
-            "defaultValue": "Gen4",
-            "type": "string"
+            "value": "Gen5"
         },
         "dnsZonePartner": {
-            "type": "string",
-            "defaultValue": ""
+            "value": ""
         },
         "collation": {
-            "type": "string",
-            "defaultValue": "SQL_Latin1_General_CP1_CI_AS"
-        },
-        "proxyOverride": {
-            "type": "string",
-            "defaultValue": ""
-        },
-        "publicDataEndpointEnabled": {
-            "type": "bool",
-            "defaultValue": false
-        },
-        "timezoneId": {
-            "type": "string",
-            "defaultValue": "UTC"
+            "value": "SQL_Latin1_General_CP1_CI_AS"
         }
     },
     "variables": {},
