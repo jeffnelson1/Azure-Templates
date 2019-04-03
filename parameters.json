@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "managedInstanceName": {
+            "value": "sqlmi-datapoc-lab"
+        },
+        "location": {
+            "value": "westus"
+        },
+        "administratorLogin": {
+            "value": "sqladmin"
+        },
+        "administratorLoginPassword": {
+            "value": null
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "RSG-NetworkInfrastructureSpoke-Test"
+        },
+        "virtualNetworkName": {
+            "value": "VNET-10.13.0.0-NetworkSpoke"
+        },
+        "subnetName": {
+            "value": "SQL_Managed_Instance"
+        },
+        "skuName": {
+            "value": "GP_Gen5"
+        },
+        "skuEdition": {
+            "value": "GeneralPurpose"
+        },
+        "storageSizeInGB": {
+            "value": 32
+        },
+        "vCores": {
+            "value": 8
+        },
+        "licenseType": {
+            "value": "LicenseIncluded"
+        },
+        "hardwareFamily": {
+            "value": "Gen5"
+        },
+        "dnsZonePartner": {
+            "value": ""
+        },
+        "collation": {
+            "value": "SQL_Latin1_General_CP1_CI_AS"
+        }
+    }
+}
